@@ -12,7 +12,7 @@
             <form class="search_area" method="get" action="https://echo.htmlacademy.ru">
                 <p>
                     <label class="visually-hidden" for="search_area">Строка поиска</label>
-                    <input id="search_area" type="search" name="search" placeholder="Поиск">
+                    <input id="search_area" type="search" name="search" placeholder="Поиск по сайту">
                 </p>            
             </form>
             
@@ -57,6 +57,127 @@
             
         </header>
         
+        <main>
+            <h1>Моноподы для селфи</h1>
+            <nav>
+                <ol>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Каталог товаров</a></li>
+                    <li><a href="#">Моноподы для селфи</a></li>
+                </ol>
+            </nav>
+
+            <section>
+                <h2>Сортировка:</h2>
+                <p>По цене По типу По популярности</p>
+            </section>
+            <section>
+            <h2>Фильтр:</h2> 
+            <!--<form class="cost" method="get" action="https://echo.htmlacademy.ru">                   
+                <label for="cost">Стоимость</label>
+                <input id="cost" type
+            </form>-->        
+            
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset>
+                        <legend>Цвет</legend>
+                        <ul>
+                            <li>
+                                <p>                                
+                                    <input type="checkbox" id="color_black"  name="black" checked>
+                                    <label for="color_black">Черный</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p>                                    
+                                    <input type="checkbox" id="color_white"  name="white">
+                                    <label for="color_white">Белый</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p>                                    
+                                    <input type="checkbox" id="color_blue"  name="blue" checked>
+                                    <label for="color_blue">Синий</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p>                                    
+                                    <input type="checkbox" id="color_red"  name="red" checked>
+                                    <label for="color_red">Красный</label>
+                                </p>
+                            </li>
+                            <li>
+                                <p>                                    
+                                    <input type="checkbox" id="color_pink"  name="pink">
+                                    <label for="color_pink">Розовый</label>
+                                </p>
+                            </li>                            
+                        </ul>                    
+                    </fieldset>
+                    <fieldset>
+                        <legend>Bluetooth</legend>
+                        <ul>
+                            <li>
+                                <p>                                                    
+                                    <input type="radio" id="yes"  name="Bluetooth" value="yes" checked>
+                                    <label for="yes">Есть</label> 
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <input type="radio" name="Bluetooth" value="no" id="no">
+                                    <lable for="no">Нет</lable>
+                                </p>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit">Показать</button>
+                </form>            
+            </section>
+            <section>
+                <h2>Каталог товаров</h2>
+                <figure>
+                    <img src="products/item-1.jpg.jpg" alt="">
+                    <figcaption>Любительская селфи-палка <span>500 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="products/item-2.jpg.jpg" alt="">
+                    <figcaption>Профессиональная селфи-палка <span>1500 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src="products/item-3.jpg.jpg" alt="">
+                    <figcaption>Непотопляемая селфи-палка <span>2500 руб.</span></figcaption>
+                </figure>
+                <figure>
+                    <img src='products/item-4.jpg.jpg' alt="">
+                    <figcaption>Селфи-палка "Следуй за мной" <span>4900 руб.</span></figcaption>
+                </figure>
+                <button type="button"><a href="#">Назад</a></button>
+                <p>1 2 3</p>
+                <button type="button"><a href="#">Вперед</a></button>
+            </section>            
+        </main>
+        <footer>
+            <img src="files/logo_device.png" alt="Логотип Device">
+            
+            <div>
+                <button type="button">Войти</button>
+                <button type="button">Сравнить</button>
+                <button type="button">Корзина</button>
+            </div>
+            <ul>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Фэйсбук</a></li>
+                <li><a href="#">Инстаграм</a></li>
+                <li><a href="#">Твиттер</a></li>
+            </ul>
+            <p>г.Москва, ул.Строителей, 15</p>
+            <p>Тел.: +7 (495) 495-95-95</p>
+        </footer>
     </body>
     
 
