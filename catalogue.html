@@ -79,6 +79,15 @@
             </form>-->        
             
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="range-slider">
+                        <legend>Цена</legend>
+                        <input type="number" value="0" name="min">
+                        <input type="number" value="5000" name="max">
+                        <div class="range-slider-track">
+                            <div class="range slider-pin range-slider-pin-min"></div>
+                            <div class="range-slider-pin range-slider-pin-max"></div>
+                        </div>
+                    </fieldset>
                     <fieldset>
                         <legend>Цвет</legend>
                         <ul>
@@ -125,7 +134,7 @@
                             </li>
                             <li>
                                 <p>
-                                    <input type="radio" name="Bluetooth" value="no" id="no">
+                                    <input type="radio" name="Bluetooth" value="no" id="no" tabindex="0" >
                                     <lable for="no">Нет</lable>
                                 </p>
                             </li>
