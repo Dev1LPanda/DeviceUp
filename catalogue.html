@@ -72,13 +72,17 @@
                 <p>По цене По типу По популярности</p>
             </section>
             <section>
-            <h2>Фильтр:</h2> 
-            <!--<form class="cost" method="get" action="https://echo.htmlacademy.ru">                   
-                <label for="cost">Стоимость</label>
-                <input id="cost" type
-            </form>-->        
-            
+                <h2>Фильтр:</h2>            
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="range-slider">
+                        <legend>Цена</legend>
+                        <input type="number" value="0" name="min">
+                        <input type="number" value="5000" name="max">
+                        <div class="range-slider-track">
+                            <div class="range slider-pin range-slider-pin-min"></div>
+                            <div class="range-slider-pin range-slider-pin-max"></div>
+                        </div>
+                    </fieldset>
                     <fieldset>
                         <legend>Цвет</legend>
                         <ul>
