@@ -3,135 +3,119 @@
     <head>
         <meta charset="utf-8">
         <title>Магазин гаджетов Device</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     
     <body>
-        <header>
+        <header class="main-header">
             <img src="files/logo_device.png" alt="Логотип Device">          
-            <form class="search_area" method="get" action="https://echo.htmlacademy.ru">
+            
+            <form method="get" action="https://echo.htmlacademy.ru">
                 <p>
-                    <label class="visually-hidden" for="search_area">Строка поиска</label>
-                    <input id="search_area" type="search" name="search" placeholder="Поиск по сайту">
+                    <label class="visually-hidden" for="search-area">Строка поиска</label>
+                    <input id="search-area" type="search" name="search" placeholder="Поиск по сайту">
                 </p>            
-            </form>
-            
-            <button type="button">Войти</button>
-
-            <form class="user" method="post" action="https://echo.htmlacademy.ru">
-                <p>
-                    <label for="login">Логин</label>
-                    <input id="login" type="text" name="login" placeholder="Логин">
-                </p>
-                <p>
-                    <label for="password">Пароль</label>
-                    <input id="password" type="password" name="psw" placeholder="Пароль">
-                </p>
-                <p>
-                    <label for="remember_me">Запомните меня</label>
-                    <input id="remember_me" type="checkbox" name="remember">
-                </p>
-                <button type="submit">Войти</button>              
-            </form>
-                
-           <ul>                    
-                <li><button type="button">Сравнить</button></li>
-                <li><button type="button">Корзина</button></li>                
-            </ul>
-            <button type="button">Каталог товаров</button>
-            <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="catalogue.html">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
-            
-            <ul>                    
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Гарантия</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            
-            
+            </form> 
+            <nav class="main-navigation">                        
+                <ul class="user-navigation">
+                    <li><button type="button">Войти</button> </li>
+                </ul>                    
+               <ul class="shopping-navigation">                                        
+                    <li><button type="button">Сравнить</button></li>
+                    <li><button type="button">Корзина</button></li>                
+                </ul>
+                <ul class="catalogue-navigation">
+                    <button  type="button">Каталог товаров</button>
+                </ul>       
+                <ul class="site-navigation">                    
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>  
+                       
+            </nav>
         </header>
         
         <main>
-            <h1>Магазин гаджетов "Device"</h1>
+            <h1 class="visually-hidden">Магазин гаджетов "Device"</h1>
             <section class="slider">
-                <ul>
-                    <li class="slider-item">
-                        <h2>Делай селфи,<br>
-                             как Бен Стиллер!</h2>
-                        <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-                           Восемь(Восемь, Карл!) метров длиной и всего 5 килограмм.                
-                        </p>
-                        <button type="button">Подробнее</button>
-                        <dl>
-                            <dt>Длина палки</dt>
-                            <dd>8,5 м</dd>
-                            <dt>Вес палки</dt>
-                            <dd>5 кг</dd>
-                            <dt>Материал</dt>
-                            <dd>Карбон</dd>
-                        </dl>
-                        <img src="files/slider-1.png" width="" height="" alt="Селфи-палка">
-                    </li>
-                    <li class="slider-item">
-                        <h2>Худеем<br>
-                             правильно!</h2>
-                        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-                           не пропускать занятия и соблюдать диету.</p>
-                        <button type="button">Подробнее</button>
-                        <dl>
-                            <dt>Без подзарядки</dt>
-                            <dd>48 часов</dd>
-                        </dl>
-                        <img src="files/slider-2.png" width="" height="" alt="Фитнес-браслет">
-                    </li>
-                    <li class="slider-item">
-                        <h2>Порхает, как бабочка,<br>
-                            Жалит, как пчела!
-                        </h2>
-                        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                            мощным лазером, замаскированный под стандартную камеру.
-                        </p>
-                        <button type="button">Подробнее</button>
-                        <dl>
-                            <dt>Дальность полета</dt>
-                            <dd>800 м</dd>
-                            <dt>Радиус поражения</dt>
-                            <dd>50 м</dd>
-                        </dl>
-                        <img src="files/slider-3.png" width="" height="" alt="Квадрокоптер">
-                    </li>
-                </ul>
+                <h1 class="visually-hidden">Специальные предложения</h1>
+                
+                <article class="slider-item">
+                    <h2>Делай селфи,<br>
+                       как Бен Стиллер!</h2>
+                    <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+                       Восемь(Восемь, Карл!) метров длиной и всего 5 килограмм.                
+                    </p>
+                    <button class="more" type="button">Подробнее</button>
+                    <dl class="description-list">
+                        <dt>Длина палки</dt>
+                        <dd>8,5 м</dd>
+                        <dt>Вес палки</dt>
+                        <dd>5 кг</dd>
+                        <dt>Материал</dt>
+                        <dd>Карбон</dd>
+                    </dl>
+                    <img src="files/slider-1.png" width="" height="" alt="Селфи-палка">
+                </article>
+
+                <article class="slider-item">
+                    <h2>Худеем<br>
+                         правильно!</h2>
+                    <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+                        не пропускать занятия и соблюдать диету.</p>
+                    <button class="more" type="button">Подробнее</button>
+                    <dl class="description-list">
+                        <dt>Без подзарядки</dt>
+                        <dd>48 часов</dd>
+                    </dl>
+                    <img src="files/slider-2.png" width="" height="" alt="Фитнес-браслет">
+                </article>
+
+                <article class="slider-item">
+                    <h2>Порхает, как бабочка,<br>
+                        Жалит, как пчела!
+                    </h2>
+                    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                        мощным лазером, замаскированный под стандартную камеру.
+                    </p>
+                    <button class="more" type="button">Подробнее</button>
+                    <dl class="description-list">
+                        <dt>Дальность полета</dt>
+                        <dd>800 м</dd>
+                        <dt>Радиус поражения</dt>
+                        <dd>50 м</dd>
+                    </dl>
+                    <img src="files/slider-3.png" width="" height="" alt="Квадрокоптер">
+                </article>
+                
             </section>
             <section class="popular">
-                <h2>Популярные товары</h2>
-                <ul>
-                    <li>
-                        <img src="svg/popular-1.svg">
+                <h2 class="visually-hidden">Популярные товары</h2>
+                <ul class="popular-list">
+                    <li class="popular-list-item">
+                        <img src="svg/popular-1.svg" width="97px" height="55px">
                         <a href="#">Виртуальная реальность</a>
                     </li>
-                    <li>
+                    <li class="popular-list-item">
                         <img src="svg/popular-2.svg">
                         <a href="catalogue.html">Моноподы для селфи</a>
                     </li>
-                    <li>
+                    <li class="popular-list-item">
                         <img src="svg/popular-3.svg">
                         <a href="#">Экшн-камеры</a>
                     </li>
-                    <li>
+                    <li class="popular-list-item">
                         <img src="svg/popular-4.svg">
                         <a href="#">Фитнес-браслеты</a>
                     </li>
-                    <li>
+                    <li class="popular-list-item">
                         <img src="svg/popular-5.svg">
                         <a href="#">Умные часы</a>
                     </li>
-                    <li>
+                    <li class="popular-list-item">
                         <img src="svg/popular-6.svg">
                         <a href="#">Квадрокоптеры</a>
                     </li>
@@ -197,24 +181,7 @@
                     проверить работоспособность покупки. Всякое бывает.</p>
                 <img src="files/map.jpg" alt="ул.Строителей, 15">
                 <button type="button">Напишите нам</button>               
-            </section>
-            <!--Здесь будет форма "Напишите нам-->
-            <form class="write_us" method="post" action="https://echo.htmlacademy.ru">
-                <p>
-                    <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p>
-                    <label for="email">Ваш e-mail:</label>
-                    <input id="email" type="email" name="email" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="message_text">Текст письма:</label>
-                    <input id="message_text" type="text" name="message_text" placeholder="В свободной форме">
-                </p>
-                <button type="submit">Отправить</button>
-            </form> 
-
+            </section>                                  
         </main>
 
         <footer>
@@ -238,5 +205,51 @@
             <p>г.Москва, ул.Строителей, 15</p>
             <p>Тел.: +7 (495) 495-95-95</p>
         </footer>
+
+        <section>
+            <form class="write_us" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="email">Ваш e-mail:</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="message_text">Текст письма:</label>
+                    <input id="message_text" type="text" name="message_text" placeholder="В свободной форме">
+                </p>
+                <button type="submit">Отправить</button>
+            </form> 
+        </section>
+
+        <section>
+            <form class="user" method="post" action="https://echo.htmlacademy.ru">
+                <p>
+                    <label for="login">Логин</label>
+                    <input id="login" type="text" name="login" placeholder="Логин">
+                </p>
+                <p>
+                    <label for="password">Пароль</label>
+                    <input id="password" type="password" name="psw" placeholder="Пароль">
+                </p>
+                <p>
+                    <label for="remember_me">Запомните меня</label>
+                    <input id="remember_me" type="checkbox" name="remember">
+                </p>
+                <button type="submit">Войти</button>              
+            </form>
+        </section>
+        <section>
+            <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="catalogue.html">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+                <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+        </section>
     </body>
 </html>

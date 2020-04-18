@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #464646;
+    background-color: #ffffff;
+}
+
+
+a {
+    text-decoration: none;
+}  
+
+
+.visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.main-header {
+    width: 1160px;
+    /*height: 299px;*/
+    background-color: rgba(240, 197, 46, 0.5);
+    color: #000000;    
+}
+
+
+.main-navigation ul {
+    list-style: none;
+    color: #000000;
+}
+
+
+#search-area {
+    background-color: transparent;
+    border: none;
+}
+
+
+button,
+a {
+    border: none;
+    background-color: transparent;
+}
+
+
+.catalogue-navigation button,
+.site-navigation a {
+    color: #000000;    
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 24px;
+    text-transform: uppercase;  
+}
+
+
+.slider-item {
+    list-style: none;
+}
+
+
+.slider-item h2 {
+    color: #000000;
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+}
+
+
+.slider-item button{
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000000;
+    /*background-color: #f0c52e;*/  
+    background-image: url("../files/More2.png");
+    background-repeat: no-repeat;  
+    background-size: 220px 8px;
+    background-position: center;
+    padding-left: 43px; 
+    padding-right: 43px;
+}
+
+
+.slider-item button:hover,
+.slider-item button:focus{
+    background-size: 220px 40px;
+}
+
+.slider-item button:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.description-list dd{
+    font-family: "Gilroy";
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+}
+
+.popular-list-item img{
+    background-color: transparent;
+    background-image: url("../files/popular-list-item.png");
+    background-size: 160px 160px;
+    background-repeat: no-repeat;    
+}
+
+/*.popular-list-item img:hover,
+.popular-list-item img:focus{
+    
+}*/
+
+/*.popular-list-item img:active{
+    opacity: 0.5;
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face{
+    font-family:'Gilroy';
+    src: url('../fonts/gilroylight.woff') format('woff'),
+    url('../fonts/gilroylight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face{
+    font-family:'Gilroy';
+    src: url('../fonts/gilroyextrabold.woff') format('woff'),
+    url('../fonts/gilroyextrabold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
