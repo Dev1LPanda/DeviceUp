@@ -85,8 +85,7 @@ a {
     font-weight: 800;
     font-size: 18px;
     text-transform: uppercase;
-    color: #000000;
-    /*background-color: #f0c52e;*/  
+    color: #000000;  
     background-image: url("../files/More2.png");
     background-repeat: no-repeat;  
     background-size: 220px 8px;
@@ -112,21 +111,135 @@ a {
     line-height: 48px;
 }
 
+.popular-list{
+    list-style: none;
+}
+
 .popular-list-item img{
-    background-color: transparent;
-    background-image: url("../files/popular-list-item.png");
+    background-color: rgba(240, 197, 46, 0.5);
     background-size: 160px 160px;
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+.popular-list-item img:focus,
+.popular-list-item img:hover{
+    background-color: rgb(240, 197, 46);    
+    background-size: 160px 160px;
+    background-position: center;
     background-repeat: no-repeat;    
 }
 
-/*.popular-list-item img:hover,
-.popular-list-item img:focus{
-    
+.popular-list-item a{
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.popular-list-item:active{
+    opacity: 0.5;
+}
+
+.virtual-reality{
+    padding-bottom: 53px;  
+    padding-top: 52px;
+    padding-left: 31px;
+    padding-right: 32px;
+}
+
+.selfie-stick {
+    padding-bottom: 0px;  
+    padding-top: 43px;
+    padding-left: 38px;
+    padding-right: 36px;
+}
+
+.action-camera {
+    padding-bottom: 35px;  
+    padding-top: 38px;
+    padding-left: 49px;
+    padding-right: 40px;
+}
+
+.fitness-whristband {
+    padding-bottom: 45px;  
+    padding-top: 50px;
+    padding-left: 28px;
+    padding-right: 25px;
+}
+
+.smart-watch {
+    padding-bottom: 30px;  
+    padding-top: 32px;
+    padding-left: 55px;
+    padding-right: 49px;
+}
+
+.quadrocopter {
+    padding-bottom: 42px;  
+    padding-top: 49px;
+    padding-left: 13px;
+    padding-right: 15px;
+}
+
+.services {
+    background-color: rgb(229, 229, 229);
+}
+
+.services-list-item button{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+
+    background-image: url("../files/More2.png");
+    background-repeat: no-repeat;  
+    background-size: 160px 8px;
+    background-position: center;
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+.services-list-item button:hover,
+.services-list-item button:focus{
+    background-size: 160px 40px;
+}
+
+.services-list-item button:active {
+    color: rgb(247, 225, 132);
+    background-size: 278px 40px;
+    background-image: none;
+    background-color: #000000;
+    padding-right: 143px;
+}
+
+.services-title {
+    font-family: 'Gilroy';
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 48px;
+    color: #000000;
+}
+
+.logotypes ul{
+    list-style: none;
+}
+
+/*.partners-list-item1 div{
+    background-image: url(../files/logo-1.jpg.png);
+    background-size: 260px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 260px;
+    height: 94px;
 }*/
 
-/*.popular-list-item img:active{
-    opacity: 0.5;
-}*/
+
+
 
 
 
@@ -179,5 +292,5 @@ a {
     url('../fonts/gilroyextrabold.woff2') format('woff2');
     font-weight: 800;
     font-style: normal;
-}
+} 
 
