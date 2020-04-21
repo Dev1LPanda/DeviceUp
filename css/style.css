@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    line-height: 30px;
     font-weight: 300;
     line-height: 30px;
     color: #464646;
@@ -34,12 +35,27 @@ a {
     color: #000000;    
 }
 
+.header-device-logo img:hover,
+.header-device-logo img:focus,
+.footer-device-logo img:hover,
+.footer-device-logo img:focus{
+    opacity: 0.5;
+}
+
+.header-device-logo img:active,
+.footer-device-logo img:active{
+    opacity: 0.3;
+}
+
+.search-area-form p:hover,
+.search-area-form p:focus{
+    opacity: 0.6;
+}
 
 .main-navigation ul {
     list-style: none;
     color: #000000;
 }
-
 
 #search-area {
     background-color: transparent;
@@ -52,6 +68,11 @@ a {
     border: none;
     background-color: transparent;
 }
+
+/*.user-navigation button:focus,
+.user-navigation button:hover{
+    opacity: 0.6px;
+}*/
 
 
 .catalogue-navigation button,
@@ -193,7 +214,7 @@ a {
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
-
+    text-transform: uppercase;
     background-image: url("../files/More2.png");
     background-repeat: no-repeat;  
     background-size: 160px 8px;
@@ -223,11 +244,12 @@ a {
     color: #000000;
 }
 
-.logotypes ul{
+.logotypes ul,
+.services ul{
     list-style: none;
 }
 
-/*.partners-list-item1 div{
+.partners-list-item1 div{
     background-image: url(../files/logo-1.jpg.png);
     background-size: 260px 100px;
     background-position: center;
@@ -236,10 +258,291 @@ a {
     padding-bottom: 40px;
     width: 260px;
     height: 94px;
+}
+
+.partners-list-item1 div:focus,
+.partners-list-item1 div:hover{
+    background-image: url(../files/logo-1.jpg\ color.png);
+}
+
+.partners-list-item2 div:focus,
+.partners-list-item2 div:hover{
+    background-image: url(../files/logo-2color.jpg);
+}
+
+.partners-list-item3 div:focus,
+.partners-list-item3 div:hover{
+    background-image: url(../files/logo-3.jpg\ copy.jpg);
+}
+
+.partners-list-item4 div:focus,
+.partners-list-item4 div:hover{
+    background-image: url(../files/logo-4.jpg\ copy.jpg);
+}
+
+.partners-list-item2 div{
+    background-image: url(../files/logo-2.jpg.png);
+    background-size: 260px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 260px;
+    height: 94px;
+}
+
+.partners-list-item3 div{
+    background-image: url(../files/logo-3.jpg.png);
+    background-size: 260px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 260px;
+    height: 94px;
+}
+
+.partners-list-item4 div{
+    background-image: url(../files/logo-4.jpg.png);
+    background-size: 260px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 260px;
+    height: 94px;
+}
+
+.info h2,
+.contact h2{
+    color: #000000;
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+}
+
+.info-list li{
+    /*list-style:*/
+    color: #000000;
+    font-family: 'Gilroy';
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 40px;    
+}
+
+.info button,
+.contact button{
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-image: url("../files/More2.png");
+    background-repeat: no-repeat;  
+    background-size: 260px 8px;
+    background-position: center;
+    padding-left: 23px; 
+    padding-right: 22px;
+}
+
+.info button:hover,
+.info button:focus,
+.contact button:hover,
+.contact button:focus{
+    background-size: 260px 40px;
+}
+
+.info button:active,
+.contact button:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
+footer{
+    background-color: #464646;
+    width: 1440px;
+    height: 323px;
+}
+
+.footer-shopping button{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+}
+
+.footer-navigation-item a{
+    color: #ffffff;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+}
+
+.number,
+.adress{
+    color: #ffffff;
+}
+
+.catalogue-popup{
+    background-color: rgb(247, 226, 150);
+    width: 1160px;
+    height: 129px;
+}
+
+.catalogue-popup-list{
+    list-style: none;
+}
+
+.catalogue-popup-list-item a{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Open Sans';
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+}
+
+
+
+/*.user-form form{
+    width: 960px;
+    height: 553px;
 }*/
 
 
 
+.catalogue-page-title{
+    color: #000000;
+    font-family: 'Gilroy';
+    font-size: 47px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0.47px;
+}
+
+.catalogue-page-navigation-list{
+    list-style: none;
+}
+
+.catalogue-page-navigation-list-item a{
+    color:rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0.14px;
+}
+
+.catalogue-page-sort h2,
+.catalogue-page-section-filter h2{
+    color: #000000;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
+
+.catalogue-page-sort p{
+    color:#000000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;    
+}
+
+.catalogue-page-section-filter{
+    background-color: #eeeeee;
+    width: 468px;
+    /*height: 1287px;*/
+}
+
+.catalogue-page-section-filter fieldset{
+    border-style: none;
+}
+
+.catalogue-page-section-filter legend{
+    color: #000000;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.18px;    
+}
+
+.catalogue-page-color-filter ul,
+.catalogue-page-bluetooth-filter ul{
+    list-style: none;
+}
+
+.filter-checkbox-color{
+    color: #000000;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    letter-spacing: 0.14px;
+}
+
+.catalogue-page-section-filter-form button{
+    color: #000000;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-image: url("../files/More2.png");
+    background-repeat: no-repeat;  
+    background-size: 200px 8px;
+    background-position: center;
+    padding-left: 42px; 
+    padding-right: 41px;
+}
+
+.catalogue-page-section-filter-form button:hover,
+.catalogue-page-section-filter-form button:focus{
+    background-size: 200px 40px;
+}
+
+.catalogue-page-section-filter-form button:active{
+    opacity: 0.5;
+}
+
+.catalogue-page-product figcaption{
+    color:#000000;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+}
+
+.catalogue-page-product-price {
+    color: #464646;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;    
+}
+
+.catalogue-page-bottom{
+    background-color: #eeeeee;
+    width: 760px;
+    /*height: 70px;*/
+}
+
+.catalogue-page-bottom button a{
+    color: #000000;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+}
 
 
 
